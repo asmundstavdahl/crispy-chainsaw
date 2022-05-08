@@ -1,0 +1,22 @@
+{
+    "name": "asmundstavdahl/php2js",
+    "type": "library",
+    "require-dev": {
+        "phpstan/phpstan": "^1.6"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "AsmundStavdahl\\Php2Js\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Åsmund Stavdahl",
+            "email": "asmund.stavdahl@gmail.com"
+        }
+    ],
+    "require": {
+        "nikic/php-parser": "^4.13"
+    }
+}
