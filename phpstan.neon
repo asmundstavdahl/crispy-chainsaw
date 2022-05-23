@@ -1,0 +1,14 @@
+parameters:
+    level: 8
+    paths:
+        - src
+        - public
+        - template
+    bootstrapFiles:
+        - vendor/autoload.php
+    excludePaths:
+        analyse:
+            - vendor
+    ignoreErrors:
+        - '#has parameter [^ ]+ with no value type specified in iterable type array\.$#'
+

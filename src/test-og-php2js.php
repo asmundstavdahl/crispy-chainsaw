@@ -13,6 +13,14 @@ $window->addEventListener(
         )
 );
 
+$window->addEventListener(
+    "load",
+    fn () =>
+    $document
+        ->getElementById("theDiv")
+        ->innerHTML = "Hello, " . $person->getName()
+);
+
 $arr1 = [
     "A",
     "B",
@@ -27,6 +35,8 @@ class Person
 {
     private string $name;
 
+    static $anyValue = 'a';
+
     /**
      * Class constructor.
      */
@@ -34,6 +44,13 @@ class Person
     {
         $this->name = $name;
     }
+
+    public function getName(): string
+    {
+        return $this->name;
+    }
 }
 
-$console->log(new Person("Åsmund"));
+$person = new Person("Åsmund");
+
+$console->log($person);
